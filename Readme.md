@@ -125,20 +125,3 @@ This project uses a **linear regression model** to predict the price of diamonds
 
 This project is licensed under the MIT License. Feel free to use and modify the code as needed.
 
----
-
-## 🙏 Acknowledgments
-
-Special thanks to open-source datasets and tools that made this project possible. This repository showcases the power of machine learning for both classification and regression tasks.
-```
-
----
-
-### Features:
-1. **Personalized Title**: Includes your name and student ID.
-2. **Clear Structure**: Separates the two projects for better readability.
-3. **How-To Instructions**: Guides users on running both Streamlit apps.
-4. **Technologies**: Lists the key libraries used in the project.
-5. **Acknowledgments and License**: Proper credits and permissions.
-
-Save this as `README.md` in your GitHub repository for a polished and professional look. Let me know if you need further tweaks! 😊
