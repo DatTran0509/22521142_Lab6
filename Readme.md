@@ -75,19 +75,6 @@ Replace `/path/to/diamond_price_demo.py` with the actual path to the Python scri
 
 ---
 
-## 🏗️ Project Structure
-
-```
-├── traffic_vehicle_demo.py      # Streamlit app for traffic classification
-├── diamond_price_demo.py        # Streamlit app for diamond price prediction
-├── model/                       # Folder containing trained models
-├── dataset/                     # Traffic vehicle dataset
-├── requirements.txt             # Required libraries
-├── README.md                    # Project documentation
-```
-
----
-
 ## 🚦 Traffic Vehicle Classification
 
 This project uses a **deep learning model** (pretrained Xception) fine-tuned to classify **58 different traffic sign categories**. 
