@@ -52,25 +52,44 @@ def preprocess_image(image):
     image = np.expand_dims(image, axis=0)  # Add batch dimension
     return image
 
-st.title("Traffic Sign Classification with Pretrained Model")
-st.write("Upload an image to classify the traffic sign.")
+# Define the preprocess function and class names (assume these are already defined above)
+# preprocess_image, model, class_names
 
-# File uploader
-uploaded_file = st.file_uploader("Choose an image file", type=["jpg", "jpeg", "png"])
+# Application Title with Emoji
+st.title("🚦 Traffic Sign Classification with Pretrained Model")
+
+# Application Description with Icon
+st.write("🛣️ **Upload an image to classify the traffic sign.**")
+
+# Add a separator
+st.markdown("---")
+
+# File uploader with Icon
+uploaded_file = st.file_uploader("📤 **Choose an image file:**", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
     # Load and display the image
     image = Image.open(uploaded_file)
-    st.image(image, caption="Uploaded Image", use_column_width=True)
+    st.image(image, caption="🖼️ **Uploaded Image**", use_column_width=True)
     
     # Preprocess and predict
-    st.write("Processing the image...")
+    st.write("⚙️ **Processing the image...**")
     preprocessed_image = preprocess_image(image)
     predictions = model.predict(preprocessed_image)
     predicted_class_idx = np.argmax(predictions)
     predicted_class_name = class_names[predicted_class_idx]
     confidence = predictions[0][predicted_class_idx]
 
+    # Add a separator
+    st.markdown("---")
+
     # Display the results
-    st.write(f"**Predicted Class:** {predicted_class_name}")
-    st.write(f"**Confidence:** {confidence:.2f}")
+    st.success(f"🎯 **Predicted Class:** {predicted_class_name}")
+    st.info(f"📊 **Confidence:** {confidence * 100:.2f}%")
+
+    # Add additional icons for a visual break
+    st.markdown("✨ **Thank you for using the Traffic Sign Classifier!** 🚗 🛑 🏁")
+
+# Footer Section
+st.markdown("---")
+st.write("💡 **Tip:** Use high-quality traffic sign images for better results!")

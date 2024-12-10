@@ -44,5 +44,5 @@ if st.button("💰 Predict Price"):
 # Footer
 st.markdown("""
 ---
-💡 Created by Tran Manh Phuc From Quang Tri 💖 
+💡 Created by Tran Manh Phuc From Quang Tri 💖  
 """)
