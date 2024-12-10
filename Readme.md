@@ -1,8 +1,6 @@
 Here’s a **`README.md`** file that includes both the traffic vehicle classification and diamond price regression projects, with a focus on Streamlit app deployment.
 
 ---
-
-```markdown
 # Trần Mạnh Phúc - 22521142
 
 ## 🚦 Traffic Vehicle Classification and 💎 Diamond Price Prediction
@@ -26,9 +24,8 @@ Both projects are implemented as Streamlit apps. Follow these steps to set up an
 ### Step 1: Install Dependencies
 Ensure all required libraries are installed. Use the provided `requirements.txt`:
 
-```bash
 pip install -r requirements.txt
-```
+
 
 This installs the necessary libraries such as TensorFlow, Streamlit, scikit-learn, and others.
 
@@ -40,9 +37,8 @@ This installs the necessary libraries such as TensorFlow, Streamlit, scikit-lear
 
 To launch the **Traffic Vehicle Classification** app, run the following command:
 
-```bash
 streamlit run /path/to/traffic_vehicle_demo.py
-```
+
 
 Replace `/path/to/traffic_vehicle_demo.py` with the actual path to the Python script.
 
@@ -50,9 +46,8 @@ Replace `/path/to/traffic_vehicle_demo.py` with the actual path to the Python sc
 
 To launch the **Diamond Price Prediction** app, run the following command:
 
-```bash
 streamlit run /path/to/diamond_price_demo.py
-```
+
 
 Replace `/path/to/diamond_price_demo.py` with the actual path to the Python script.
 
